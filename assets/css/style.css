@@ -546,7 +546,7 @@ top:0;
 
 }
 .contactUs{
-    padding: 130px 148;
+    padding: 130px 0 148px;
 }
 .gfield_required{
     display: none;;
@@ -844,16 +844,11 @@ padding:10px 0;;
     display: block;
 }
     .hero{
-        padding:150px 0;
+        padding-top:150px ;
+        padding-bottom: 80px;;
    
     }
-    .workBox{
-        margin-bottom:20px;
-        height:auto
-    }
-    .workBox h4{
-        margin-top:70px;
-    }
+
     .heroSection .subscribeBox{
         margin-top:20px;
     }
@@ -939,6 +934,27 @@ width:auto;
             width:100%;
             margin-bottom: 20px;
         }
+        .features{
+            padding:50px 0;
+        }
+        .services{
+            padding:50px 0;
+        }
+    .serviceBox{
+        margin:20px 0;
+    }
+    .steps{
+        padding:50px 0;
+    }
+    .packages{
+        padding:50px 0;
+    }
+    .priceBox{
+        padding:20px;
+    }
+    .priceBox h4{
+        text-align: center;
+    }
 }
 @media(min-width:768px) and (max-width:1023px){
     body{
@@ -967,6 +983,31 @@ width:auto;
         color:var(--maincolor)
     }
 
+    button.navbar-toggler {
+        position: relative;
+        border: none;
+        height: 40px;
+        width:50px;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: .7;
+        left: 16px;
+        border:1px solid VAR(--maincolor);
+        text-align: center;
+    }
+ 
+    .mobileMenu i{
+        background-color: VAR(--maincolor);
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 95%;
+        height: 3px;
+        margin-bottom:5px
+    }
+    .mobileMenu i:last-child{
+    margin-bottom: 0;;
+    }
     .close{
         display: block;
     }
@@ -1031,6 +1072,23 @@ footer{
     .mobileMenu i:last-child{
     margin-bottom: 0;;
     }
+    .services{
+        padding:50px  0;
+    }
+    .contactForm .form-group{
+        width:47%;
+    }
+    footer h6{
+        margin:10px 0
+    }
+    .footerMenu{
+        margin:20px 0
+    }
+    .footerMenu li {
+        margin-left: 38px;}
+        .subscribeBox{
+            margin:20px 0
+        }
     
 }
 @media(min-width:1024px) and (max-width:1200px){
