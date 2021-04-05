@@ -1104,4 +1104,7 @@ footer{
     .navbar-expand-lg .navbar-nav {
         width: 74%;
     }
+    .contactForm .form-group{
+        width:48.2%
+    }
 }
