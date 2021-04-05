@@ -802,6 +802,12 @@ height:80px;
 left: -3px;
 top: -20px;
     }
+    .navbar-collapse{
+padding:10px 0;;
+    }
+    .nav-link:before{
+        display: none;
+    }
 .navbar-collapse{
     position: absolute;
     width:70%;
@@ -810,7 +816,7 @@ top: -20px;
     top: -37px;
     height:100vh;
     z-index: 9999;
-    padding: 0 20px
+    padding:  20px 10px
 }
 .navbar-brand.logo {
     float: right;
@@ -821,12 +827,15 @@ top: -20px;
 .socialIcons{
     float: none;;
 }
-.socialIcons li{
-    background-color:#324A58 ;
+.subscribeBox{
+    width:100%;
+    margin-bottom: 20px;
 }
-.socialIcons li a{
-    color:white;
+.discountSec{
+    padding:20px;
+    margin-top:50px;
 }
+
 
 .navbar-expand-lg .navbar-nav .nav-item .nav-link,.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
     color:var(--maincolor)
@@ -918,6 +927,18 @@ width:auto;
     .contactForm .mainBtn{
         width:100%
     }
+    .contactForm .form-group{
+        width:100%;
+    }
+    .contactForm .form-group.marginLeft{
+        margin-left:0
+    }
+    .footerMenu li {
+        margin-left: 45px;}
+        footer .subscribeBox{
+            width:100%;
+            margin-bottom: 20px;
+        }
 }
 @media(min-width:768px) and (max-width:1023px){
     body{
@@ -945,13 +966,7 @@ width:auto;
     .navbar-expand-lg .navbar-nav .nav-item .nav-link,.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
         color:var(--maincolor)
     }
-    .socialIcons li{
-        background-color:#324A58 ;
-    }
-    .socialIcons li a{
-        color:white;
-    }
-    
+
     .close{
         display: block;
     }
