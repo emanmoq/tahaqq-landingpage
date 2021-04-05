@@ -268,11 +268,11 @@
           <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="pills-first-tab" data-toggle="pill" href="#pills-first" role="tab"
-                aria-controls="pills-first" aria-selected="true"> </a><span>ربع سنوي</span>
+                aria-controls="pills-first" aria-selected="true"> </a><span class="first">ربع سنوي</span>
             </li>
             <li class="nav-item">
               <a class="nav-link " id="pills-second-tab" data-toggle="pill" href="#pills-second" role="tab"
-                aria-controls="pills-second" aria-selected="false"> </a> <span>سنوي</span>
+                aria-controls="pills-second" aria-selected="false"> </a> <span class="second">سنوي</span>
             </li>
 
           </ul>
@@ -639,7 +639,69 @@
       </div>
     </div>
   </footer>
+  <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body">
+          <div class="heroText text-center">
+            <h5> طلب اشتراك</h5>
+            <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</span>
+          </div>
+          <div class="gf_browser_chrome gform_wrapper gform_wrapper_original_id_2 " id="gform_wrapper_42009912">
+            <form class="contactForm">
+              <div class="gform_body">
+                <ul id="gform_fields_42009912" class="gform_fields top_label form_sublabel_below description_below">
+                  <li id="field_42009912_1"
+                    class="gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible form-group marginLeft">
+                    <label class="gfield_label" for="input_42009912_1"><span class="gfield_required">*</span>الاسم بالكامل</label>
+                    <div class="ginput_container ginput_container_text ">
+                      <i class="far fa-user"></i>
 
+                      <input name="input_1" id="input_42009912_1" type="text" value="" class="medium form-control"
+                        tabindex="1" placeholder="الأسم" aria-required="true" aria-invalid="false" />
+                    </div>
+                  </li>
+                  <li id="field_42009912_2"
+                  class="gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible form-group mail ">
+                  <label class="gfield_label" for="input_42009912_2"> <span class="gfield_required">*</span> البريد الالكتروني</label>
+
+                  <div class="ginput_container ginput_container_email ">
+                    <i class="lni lni-envelope"></i>
+
+                    <input name="input_2" id="input_42009912_2" type="text" value="" class="medium form-control"
+                      tabindex="2" placeholder="البر يد" aria-required="true" aria-invalid="false" />
+                  </div>
+                </li>
+                  <li id="field_42009912_1"
+                    class="gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible form-group ">
+                    <label class="gfield_label" for="input_42009912_1"><span class="gfield_required">*</span>  رقم الهاتف</label>
+                    
+                    <div class="ginput_container ginput_container_text ">
+                      <i class="fas fa-phone-volume"></i>
+                      <input name="input_1" id="input_42009912_1" type="text" value="" class="medium form-control"
+                        tabindex="1" placeholder="رقم الجوال" aria-required="true" aria-invalid="false" />
+                    </div>
+                  </li>
+  
+      
+                </ul>
+              </div>
+              <div class="gform_footer top_label text-center">
+                <input type="submit" id="gform_submit_button_42009912" class="gform_button button mainBtn sendBtn btn "
+                  value="تأكيد الطلب" />
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <script type="text/javascript" src="assets/js/jquery1.js"></script>
   <script src="assets/js/waypoints-min.js"></script>
   <script type="text/javascript" src="assets/js/countUp.js"></script>
@@ -651,7 +713,9 @@
 
 
   <script type="text/javascript" src="assets/js/main.js"></script>
-
+<script>
+  $(".modal").modal('show')
+</script>
 </body>
 
 </html>

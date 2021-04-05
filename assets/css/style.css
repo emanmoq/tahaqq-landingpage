@@ -513,16 +513,25 @@ transition: all .5s;;
     border-radius: 24px;
     overflow: hidden;
     margin:auto;
+    position: relative;
+
+
 }
 .nav-item span{
     position: absolute;
-    right:-10%;
-
+top:0;
+}
+.first{
+    right:-20%;
+}
+.second{
+    left:-20%;
 }
 
 .nav-pills .nav-item{
     background-color: #7657E5;
     padding:5px;
+
 }
 .nav-pills .nav-link{
     width:100%;
@@ -700,7 +709,37 @@ color:var(--font-color)
     z-index: 99;
     display: none;
 }
-
+.modal .contactForm .form-group{
+    width:100%;
+}
+.modal-body{
+    background-image: url(../images/modalBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:53px 250px;
+}
+.modal-dialog{
+max-width: 80%;
+}
+.modal .close{
+    display: block;
+}
+.modal .heroText h5{
+    margin-bottom: 10px;;
+}
+.modal .heroText span{
+    font-size:1em;
+}
+.modal .gfield_label{
+    font-size:1.1em;
+    margin-bottom: 24px;;
+}
+.modal .ginput_container{
+    position: relative;
+}
+.modal .contactForm{
+    margin-top:70px;
+}
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px
