@@ -125,7 +125,7 @@ transition :all .5s;
     width:70px;
     height:50px;
     border-radius: 12px;
-    background-color: --btn-color;
+    background-color: var(--btn-color);
     color:white;
     transition: all .5s;
 
@@ -709,6 +709,9 @@ color:var(--font-color)
     z-index: 99;
     display: none;
 }
+.modal{
+    z-index: 999999;
+}
 .modal .contactForm .form-group{
     width:100%;
 }
@@ -716,7 +719,7 @@ color:var(--font-color)
     background-image: url(../images/modalBG.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding:53px 250px;
+    padding:53px;
 }
 .modal-dialog{
 max-width: 80%;
@@ -740,6 +743,21 @@ max-width: 80%;
 .modal .contactForm{
     margin-top:70px;
 }
+.modal .heroText p{
+    margin-top:23px;
+    margin-bottom:70px;
+}
+.modalContent{
+    width:70%;
+    margin:auto;
+}
+.modalImg{
+    margin-bottom: 30px;
+}
+.modalBtn{
+    display: block;
+    margin:auto;;
+}
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px
@@ -747,9 +765,43 @@ max-width: 80%;
     header{
         padding-top:20x;
     }
-    .owl-carousel .owl-stage-outer{
-    overflow: hidden;
-}
+    .modal-dialog{
+        MAX-WIDTH:100%;
+    }
+    .stepsBox{
+        width: 81%;
+        margin: auto;
+        padding: 44px;
+    }
+    .step{
+        width:60px;
+        height:60px;
+        padding:5px;
+    }
+    .fourthStep{
+        left:-10%;
+        }
+    .secondStep{
+        right:-10%;
+    }
+    .firstStep{
+        top:-30px
+    }
+    .thirdStep{
+        bottom:-30px;
+    }
+    .two,.three{
+        bottom:-4%
+    }
+    .one,.four{
+        top:-4%;
+    }
+    .wanted{
+width:80px;
+height:80px;
+left: -3px;
+top: -20px;
+    }
 .navbar-collapse{
     position: absolute;
     width:70%;
@@ -815,12 +867,12 @@ max-width: 80%;
         border-radius: 0;
         opacity: .7;
         left: 16px;
-        border:1px solid white;
+        border:1px solid VAR(--maincolor);
         text-align: center;
     }
  
     .mobileMenu i{
-        background-color: white;
+        background-color: VAR(--maincolor);
         border-radius: 2px;
         content: '';
         display: block;
@@ -871,10 +923,9 @@ width:auto;
     body{
         font-size:14px
     }
-    .owl-carousel .owl-stage-outer{
-        overflow: hidden;
-        padding:20px 5;
-    }
+ .modal-dialog{
+    max-width: 100%;;
+ }
     .navbar-collapse{
         position: absolute;
         width:70%;
