@@ -963,22 +963,7 @@ width:auto;
  .modal-dialog{
     max-width: 100%;;
  }
-    .navbar-collapse{
-        position: absolute;
-        width:70%;
-        background-color: white;
-        right: -30px;
-        top: -37px;
-        height:100vh;
-        z-index: 9999;
-        padding: 0 20px
-    }
-    .navbar-brand.logo {
-        float: right;
-        width: 87px;
-        margin-left: 90px;
-        margin-right: 0;
-    }
+
     .navbar-expand-lg .navbar-nav .nav-item .nav-link,.navbar-expand-lg .navbar-nav .nav-item.active .nav-link{
         color:var(--maincolor)
     }
@@ -1055,13 +1040,13 @@ footer{
         border-radius: 0;
         opacity: .7;
         left: 16px;
-        border:1px solid white;
+        border:1px solid var(--maincolor);
         text-align: center;
         display: block;
     }
  
     .mobileMenu i{
-        background-color: white;
+        background-color: var(--maincolor);
         border-radius: 2px;
         content: '';
         display: block;
@@ -1087,9 +1072,25 @@ footer{
     .footerMenu li {
         margin-left: 38px;}
         .subscribeBox{
-            margin:20px 0
+            margin:20px 0;
+            width:100%;
         }
-    
+        .navbar-collapse{
+            position: absolute;
+            width:70%;
+            background-color: white;
+            right: -30px;
+            top: -37px;
+            height:100vh;
+            z-index: 9999;
+            padding: 20px
+        }
+        .nav-link::before{
+            display: none;
+        }
+        .modal-dialog{
+            max-width:100%;
+        }
 }
 @media(min-width:1024px) and (max-width:1200px){
     .navbar-brand.logo {
